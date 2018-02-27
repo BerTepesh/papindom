@@ -1,0 +1,226 @@
+extends pug/base
+
+append vars
+	- html.classList.push('page-index')
+block content
+	#wrapper
+		#panel
+		.mobile-holder
+		header.header
+			include pug/header
+		.body
+			section
+				.promo
+					.promo-slider(style="background-image:url(images/preface/8.jpg)!important")
+						.promo-slider__content.promo-slider__content_invert.promo-slider__content_centered
+							.container-fluid
+								h1.promo-slider__title Байдарки
+								hr
+								.promo-slider__description
+									| Любителям природы и острых ощущений придется по вкусу катание на байдарках, каяках и каноэ. На базе центра «Папин Дом» Вы можете выбрать одну из пяти лодок
+			section.section.boats
+				.container-fluid
+					.row
+						.col-sm-10.offset-1.boats__text
+							p Каждая лодка комплектуется вёслами, аптечкой с медикаментами и спасательными жилетами со свистками. Настоятельно рекомендуемне пренебрегать последними, ведь водный туризм небезопасен! К тому же, сплавляться в жилетах комфортно: размерный ряд начинается от самых маленьких для детей и заканчивается максимальными для взрослых, а также корректируется индивидуально.
+							p Для сплава на байдарках, каяках или каноэ не требуется специальной физической подготовки, зато нелишним будет наличие дружной команды и отличного настроения! Как новичкам, так и опытным спортсменам, будет полезно ознакомиться с
+								a(href="#").pseudo правилами поведения на воде
+								|  и
+								a(href="#").pseudo списком личных вещей
+								|, необходимых для сплава.
+					.events
+						ul.row
+							li.col-12.col-md-6
+								a(href="#boat").modal-inline.hover-zoom
+									.events__img
+										.hover-zoom__img(style="background-image: url(images/boats/1.jpg);")
+									.events__text
+										span.events__date Каноэ MAD RIVER JOURNEY 156
+										p
+											b Стоимость:
+											| 3000 руб./ день (8 часов)
+							li.col-12.col-md-6
+								a(href="#boat").modal-inline.hover-zoom
+									.events__img
+										.hover-zoom__img(style="background-image: url(images/boats/2.jpg);")
+									.events__text
+										span.events__date Каноэ MAD RIVER ADVENTURE 16
+										p
+											b Стоимость:
+											| 3000 руб./ день (8 часов)
+							li.col-12.col-md-6
+								a(href="#boat").modal-inline.hover-zoom
+									.events__img
+										.hover-zoom__img(style="background-image: url(images/boats/3.jpg);")
+									.events__text
+										span.events__date Байдарка WILDERNESS NORTHSTAR
+										p
+											b Стоимость:
+											| 3500 руб./ день (8 часов)
+							li.col-12.col-md-6
+								a(href="#boat").modal-inline.hover-zoom
+									.events__img
+										.hover-zoom__img(style="background-image: url(images/boats/4.jpg);")
+									.events__text
+										span.events__date Каяк WILDERNESS TSUNAMI 160
+										p
+											b Стоимость:
+											| 3500 руб./ день (8 часов)
+							li.col-12.col-md-6
+								a(href="#").hover-zoom
+									.events__img
+										.hover-zoom__img(style="background-image: url(images/boats/5.jpg);")
+									.events__text
+										span.events__date Каяк WILDERNESS TSUNAMI 120
+										p
+											b Стоимость:
+											| 3000 руб./ день (8 часов)
+							li.col-12.col-md-6.boats__tour
+								a(href="#boat").modal-inline.hover-zoom
+									.events__img
+										.hover-zoom__img(style="background-image: url(images/boat.svg);")
+									.events__text
+										p
+											b Однодневная экскурсия <br> на байдарках
+					.boats__links
+						ul.row
+							li.col-md-6
+								.row.align-items-center
+									.col-auto
+										i.ficon-boat
+									.col
+										a(href="#") Как и где путешествовать на байдарке
+							li.col-md-5.offset-md-1
+								.row.align-items-center
+									.col-auto
+										i.ficon-river
+									.col
+										a(href="#") На байдарках по Волге: лучшее <br> воспоминание о лете
+							li.col-md-6
+								.row.align-items-center
+									.col-auto
+										i.ficon-book
+									.col
+										a(href="#boat") Инструктаж
+							li.col-md-5.offset-md-1
+								.row.align-items-center
+									.col-auto
+										i.ficon-attention
+									.col
+										a(href="#") Правила поведения на воде и в лагере
+			section.section.section_green.spacing
+					.container-fluid
+						.row
+							.col-md-8
+								p.spacing__title Хотите провести мероприятие у нас?
+								p.spacing__text Отправьте нам заявку и мы подберем решение для вашего мероприятия
+							.col-md-4.align-self-center
+								a(href="#").btn.btn-white Отправить заявку
+			section.section.contacts(style="background-image: url(images/map.jpg)")
+				.container-fluid
+					.contacts__content
+						h2 Как с нами связаться?
+						p.contacts__item
+							i.ficon-phone
+							| +7 915 973 80 92
+						p.contacts__item
+							i.ficon-mail
+							a(href="mailto: info@papindom.ru") info@papindom.ru
+						p.contacts__item
+							i.ficon-marker
+							| Ярославская область, пос. Туношна <br>
+							| Координаты: 57.539629, 40.118635
+						p.contacts__link
+							span Как добраться на автобусе?
+						p.contacts__link
+							span Как добраться на машине?
+						ul.contacts__social
+							li
+								a(href="#").btn
+									i.ficon-vk
+							li
+								a(href="#").btn
+									i.ficon-ig
+							li
+								a(href="#").btn
+									i.ficon-yt
+							li
+								a(href="#").btn
+									i.ficon-fb
+		footer.footer
+			include pug/footer
+		.popups
+			.popup.popup-boat#boat
+				.popup-boat__img(style="background-image: url(images/boats/1-1.jpg);")
+				.popup-boat__content
+					.row
+						.col-md-4
+							h3 Каноэ Mad River Journey 156
+							hr
+							p Journey — корабль для прогулок по озерам или медленно текущим рекам, налегке или с полной загрузкой, в одиночестве, с удочкой или в компании с собакой или семьей. Обладающий большой маневренностью и стабильностью Journey не теряет достойных показателей скорости на спокойной воде.
+						.col-md-8
+							.popup-boat__table
+								h4 Параметры
+								.row
+									.col-sm-6
+										ul
+											li.row.justify-content-before.no-gutters.align-items-center
+													.col
+														p Длина
+													.col-auto
+														b 472 см
+											li.row.justify-content-before.no-gutters.align-items-center
+												.col
+													p Ширина между бортами
+												.col-auto
+													b 94 см
+											li.row.justify-content-before.no-gutters.align-items-center
+												.col
+													p Ширина по ватерлинии в 10 см от днища
+												.col-auto
+													b 90 см
+											li.row.justify-content-before.no-gutters.align-items-center
+												.col
+													p Ширина максимальная
+												.col-auto
+													b 94 см
+											li.row.justify-content-before.no-gutters.align-items-center
+												.col
+													p Глубина по центру
+												.col-auto
+													b 37 см
+											li.row.justify-content-before.no-gutters.align-items-center
+												.col
+													p Глубина у носа
+												.col-auto
+													b 52 см
+									.col-sm-6
+										ul
+											li.row.justify-content-before.no-gutters.align-items-center
+												.col
+													p Глубина у кормы
+												.col-auto
+													b 52 см
+											li.row.justify-content-before.no-gutters.align-items-center
+												.col
+													p Прогиб днища у носа
+												.col-auto
+													b 3 см
+											li.row.justify-content-before.no-gutters.align-items-center
+												.col
+													p Прогиб днища у кормы
+												.col-auto
+													b 3 см
+											li.row.justify-content-before.no-gutters.align-items-center
+												.col
+													p Вес
+												.col-auto
+													b 38 гк
+											li.row.justify-content-before.no-gutters.align-items-center
+												.col
+													p Грузоподъемность
+												.col-auto
+													b 499 кг
+
+
+

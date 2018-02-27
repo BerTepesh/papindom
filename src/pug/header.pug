@@ -1,0 +1,48 @@
+-
+	var social = ["vk", "ig", "yt", "fb"];
+
+.header__info
+	.container-fluid
+		.row.align-items-center
+			.header__description.col-md
+				| Загородный центр для мероприятий и отдыха
+			.header__detail.col-md
+				.row.justify-content-between
+					.header__social.col-md.col-md-auto
+						ul.social
+							each item in social
+								li
+									a(href="#")
+										i(class="ficon-" + item) &nbsp;
+					.header__phone.col-md.col-md-auto.ml-auto
+						| +7 915 973 80 92
+.container-fluid
+	.header__main
+		.header__mobile
+			button.main-menu-toggle.menu-toggle(aria-controls="main-menu", aria-expanded="false")
+				span.menu-toggle__box
+					span.menu-toggle__inner
+		a.header__logo(href="/") &nbsp;
+		.header__menu
+			.row
+				ul.col-lg#main-menu
+					li#menu-item-1.menu-item
+						a(href="#")
+							| Размещение
+					li#menu-item-2.menu-item
+						a(href="#")
+							| Ресторан
+					li#menu-item-3.menu-item
+						a(href="#")
+							| Отдых
+
+				ul.col-lg#main-menu1
+					li#menu-item-4.menu-item
+						a(href="#")
+							| О центре
+					li#menu-item-5.menu-item
+						a(href="#")
+							| Мероприятия
+					li#menu-item-6.menu-item
+						a(href="#")
+							| Контакты

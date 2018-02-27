@@ -1,0 +1,294 @@
+extends pug/base
+
+append vars
+	- html.classList.push('page-index')
+block content
+	#wrapper
+		#panel
+		.mobile-holder
+		header.header
+			include pug/header
+		.body
+			section
+				.promo
+					.promo-slider(style="background-image:url(images/preface/2.jpg)!important")
+						.promo-slider__content.promo-slider__content_invert.promo-slider__content_centered
+							.container-fluid
+								h1.promo-slider__title Размещение
+								hr
+								.promo-slider__description
+									| 5 удобных и уютных домов вместимостью групп до 100 <br> человек, 2 просторных и оборудованных зала <br> площадью 200 и 300 м<sup>2</sup>
+								.promo-slider__buttons
+									a(href="#").btn Отправить заявку
+			section.section
+				.container-fluid
+					h2.text-center У нас есть все условия <br> для успешного мероприятия
+					hr
+					.conditions-list.conditions-list_green
+						ul.conditions.row.justify-content-center
+							li.col-6.col-md-4.col-lg-2
+								.conditions__icon
+									i.ficon-halls
+								p 2&nbsp;просторных и&nbsp;светлых зала
+							li.col-6.col-md-4.col-lg-2
+								.conditions__icon
+									i.ficon-conditioner
+								p Кондиционер и&nbsp;отопление круглый год
+							li.col-6.col-md-4.col-lg-2
+								.conditions__icon
+									i.ficon-speakers
+								p Микшер, колонки и&nbsp;микрофоны
+							li.col-6.col-md-4.col-lg-2
+								.conditions__icon
+									i.ficon-screen
+								p Проектор, экран и&nbsp;флипчарт
+							li.col-6.col-md-4.col-lg-2
+								.conditions__icon
+									i.ficon-cover
+								p Коврики, маты, подушки, пледы и&nbsp;скамейки
+							li.col-6.col-md-4.col-lg-2
+								.conditions__icon
+									i.ficon-instruments
+								p Музыкальные инструменты
+					.container-fluid
+						.conditions-slider
+							.flexslider
+								ul.slides
+									li
+										.slider(style="background-image:url(images/conditions/1.jpg)!important")
+									li
+										.slider(style="background-image:url(images/conditions/2.jpg)!important")
+			section.section.section_dark.section_mtop
+				.container-fluid
+					h2.text-center Готовые решения для групп <br> численностью
+					hr
+					ul.services.row.justify-content-center
+						li.col-sm-6.col-md-4
+							a(href="#").services-trening
+								.services__icon
+									p 20-30
+										span человек
+								.services__text Дом &laquo;1&raquo; для ведущего, дом &laquo;4&raquo; для группы и&nbsp;зал 200&nbsp;м<sup>2</sup>
+						li.col-sm-6.col-md-4
+							a(href="#").services-dances
+								.services__icon
+									p 30-45
+										span человек
+								.services__text Три дома (&laquo;1&raquo;,&laquo;3&raquo;,&laquo4&raquo;) и&nbsp;зал 200 м<sup>2</sup> или дом &laquo;5&raquo; с&nbsp;рестораном и&nbsp;зал 300&nbsp;м<sup>2</sup>
+						li.col-sm-6.col-md-4
+							a(href="#").services-teambuild
+								.services__icon
+									p 45-55
+										span человек
+								.services__text Три дома (&laquo;1&raquo;,&laquo;3&raquo;,&laquo;4&raquo;), дом с&nbsp;лофтом, кельи и&nbsp;зал 200 м<sup>2</sup> или дом &laquo;5&raquo; с&nbsp;рестораном и&nbsp;зал 300&nbsp;м<sup>2</sup>
+						li.col-sm-6.col-md-4
+							a(href="#").services-fest
+								.services__icon
+									p 55-65
+										span человек
+								.services__text Дома &laquo;1&raquo; и&nbsp;&laquo;3&raquo;, дом &laquo;5&raquo; с&nbsp;рестораном и&nbsp;зал 300 м<sup>2</sup>
+						li.col-sm-6.col-md-4
+							a(href="#").services-dances
+								.services__icon
+									p 65-100
+										span человек
+								.services__text Предоставляется вся территория базы (5&nbsp;домов, зал 200 или 300 м<sup>2</sup>)
+						li.col-sm-6.col-md-4
+							a(href="#").services-solutions
+								.services__icon
+									i.ficon-person
+								p Индивидуальные<br> решения
+					.text-center
+						a.btn(href="#") Отправить заявку
+			section.section
+				.container-fluid
+					h2.text-center Аренда залов <br>для мероприятий
+					hr
+				.switcher
+					ul.switcher__control
+						li(data-switch-btn="sw1").switcher__btn.active Зал 300 м<sup>2</sup>
+						li(data-switch-btn="sw2").switcher__btn Зал 200 м<sup>2</sup>
+					.switcher__wrap
+						.switcher__holder(data-switch-hold="sw1").active
+							.promo
+								.flexslider
+									ul.slides
+										li
+											.promo-slider(style="background-image:url(images/preface/3.jpg)!important")
+										li
+											.promo-slider(style="background-image:url(images/preface/3.jpg)!important")
+								.container-fluid
+									.promo-detail
+										.row
+											.col-lg-6.offset-1.promo-detail__main
+												h3 Зал 300 м<sup>2</sup>
+												hr
+												.row.promo-detail__data
+													.col-md-4
+														p Вместимость
+														b 100 человек
+													.col-md-4
+														p Материал пола
+														b Ламинат
+													.col-md-4
+														p Площадь
+														b 300 м<sup>2</sup>
+												p.promo-detail__text Просторный зал с панорамными окнами, которые выходят на реку. Зал подходит для занятий йогой, ретритов, танцев, лекций, тренингов и семинаров, презентаций, фестивалей, концертов и просмотров кино.
+												ul.marked-list
+													li Освещение по периметру
+													li Можно регулировать количество включенных ламп
+													li Есть прожекторы и напольные вентиляторы
+													li Регулируемое отопление
+												a.btn(href="#") Забронировать
+											.col-lg-4
+												.promo-detail__list
+													h4 Оборудование
+													ul.marked-list
+														li Музыкальная система
+														li 4 колонки и микшер
+														li 2 микрофона и микрофонные стойки
+														li Флипчат
+														li Экран и проектор
+														li Коврики и маты для физических занятий
+														li Подушки и пледы
+														li 3 гонга
+						.switcher__holder(data-switch-hold="sw2")
+							.promo
+								.flexslider
+									ul.slides
+										li
+											.promo-slider(style="background-image:url(images/preface/3.jpg)!important")
+										li
+											.promo-slider(style="background-image:url(images/preface/3.jpg)!important")
+			section
+				.container-fluid
+					h2.text-center Аренда домов
+					hr
+				.switcher
+					ul.switcher__control
+						li(data-switch-btn="sw1").switcher__btn.active Дом «1»
+						li(data-switch-btn="sw2").switcher__btn Дом «3»
+						li(data-switch-btn="sw3").switcher__btn Дом «4»
+						li(data-switch-btn="sw4").switcher__btn Дом «5»
+						li(data-switch-btn="sw5").switcher__btn Дом с лофтом
+					.switcher__wrap
+						.switcher__holder(data-switch-hold="sw1").active
+							.promo
+								.flexslider
+									ul.slides
+										li
+											.promo-slider(style="background-image:url(images/preface/4.jpg)!important")
+										li
+											.promo-slider(style="background-image:url(images/preface/4.jpg)!important")
+
+							.promo-detail.promo-detail_white
+								.container-fluid
+									.row
+										.col-md-2.offset-1.promo-detail__main
+											h3 Дом&nbsp;«1»
+											hr
+										.col-md-8.offset-1.offset-md-0.promo-detail__data.promo-detail__data_mb
+												.row
+													.col-md-6
+														b Спальные места
+														p 8-10 мест
+													.col-md-6
+														b 1-ый этаж
+														p Двуспальная кровать, 2 человека, туалет
+													.col-md-6
+														b Веранда
+														p 1 двуспальная кровать (только в летнее время)
+													.col-md-6
+														b Цокольный этаж
+														p 6 человек в общем пространстве, душ, баня
+						.switcher__holder(data-switch-hold="sw2")
+						.switcher__holder(data-switch-hold="sw3")
+						.switcher__holder(data-switch-hold="sw4")
+						.switcher__holder(data-switch-hold="sw5")
+			section.section.section_dark
+				.container-fluid
+					h2.text-center Для чего подойдет <br>наш центр?
+					hr
+					ul.services.row.justify-content-center
+						li.col-sm-6.col-md-4
+							a(href="#", style="background-image: url(images/services/4.jpg);").services-trening
+								.services__icon
+									i.ficon-trening
+								p Тренинги <br>и семинары
+						li.col-sm-6.col-md-4
+							a(href="#", style="background-image: url(images/services/5.jpg);").services-dances
+								.services__icon
+									i.ficon-dances
+								p Мастер-классы, йога,<br> танцы
+						li.col-sm-6.col-md-4
+							a(href="#", style="background-image: url(images/services/6.jpg);").services-teambuild
+								.services__icon
+									i.ficon-teambuild
+								p Тимбилдинги
+						li.col-sm-6.col-md-4
+							a(href="#", style="background-image: url(images/services/7.jpg);").services-fest
+								.services__icon
+									i.ficon-fest
+								p Фестивали <br>и ярмарки
+						li.col-sm-6.col-md-4
+							a(href="#", style="background-image: url(images/services/8.jpg);").services-weddings
+								.services__icon
+									i.ficon-dish
+								p Банкеты, свадьбы<br> и выпускные
+						li.col-sm-6.col-md-4
+							a(href="#", style="background-image: url(images/services/9.jpg);").services-solutions
+								.services__icon
+									i.ficon-person
+								p Индивидуальные<br> решения
+					.text-center
+						a.btn(href="#") Заказать мероприятие
+			section.section.section_green.spacing
+					.container-fluid
+						.row
+							.col-md-8
+								p.spacing__title Хотите провести мероприятие у нас?
+								p.spacing__text Отправьте нам заявку и мы подберем решение для вашего мероприятия
+							.col-md-4.align-self-center
+								a(href="#").btn.btn-white Отправить заявку
+			section.section.contacts(style="background-image: url(images/map.jpg)")
+				.container-fluid
+					.contacts__content
+						h2 Как с нами связаться?
+						p.contacts__item
+							i.ficon-phone
+							| +7 915 973 80 92
+						p.contacts__item
+							i.ficon-mail
+							a(href="mailto: info@papindom.ru") info@papindom.ru
+						p.contacts__item
+							i.ficon-marker
+							| Ярославская область, пос. Туношна <br>
+							| Координаты: 57.539629, 40.118635
+						p.contacts__link
+							span Как добраться на автобусе?
+						p.contacts__link
+							span Как добраться на машине?
+						ul.contacts__social
+							li
+								a(href="#").btn
+									i.ficon-vk
+							li
+								a(href="#").btn
+									i.ficon-ig
+							li
+								a(href="#").btn
+									i.ficon-yt
+							li
+								a(href="#").btn
+									i.ficon-fb
+		footer.footer
+			include pug/footer
+
+block append scripts
+	script.
+		$('.conditions-slider .flexslider').flexslider({
+			animation: "slide",
+			controlNav: false
+		});
+
+
